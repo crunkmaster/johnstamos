@@ -49,7 +49,7 @@
         var eldest = divholder.childNodes[0];
 
         bannerdiv.setAttribute("style", "text-align: center; width: 100%; background: #000; font-family: Helvetica; font-size: 4em;");
-        bannerdiv.innerHTML( "Forever - JS")
+        bannerdiv.innerHTML = "Forever - JS";
         bannerdiv.appendChild(bannerimg);
         divholder.insertBefore(bannerdiv, eldest);
 
