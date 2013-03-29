@@ -45,8 +45,7 @@
         //intravenous stamosization.
         var bannerdiv = document.createElement("div");
         var bannerimg = document.createElement("img");
-        var divholder = document.getElementsByTagName("body")[0];
-        var eldest = divholder.childNodes[0];
+        var eldest = document.getElementsByTagName("body")[0].childNodes[0];
 
         bannerdiv.setAttribute("style", "text-align: center; width: 100%; background: #000; font-family: Helvetica; font-size: 4em; color: white;");
         bannerdiv.innerHTML = "Forever - JS";
@@ -56,8 +55,9 @@
     }
 
     stamosize() ;
-    var forms = document.getElementsByTagName('form');
 
+    var forms = document.getElementsByTagName('form');
+	//add listener to every form on page
     for (var i = 0; i < forms.length; i++) {
 
         var form = forms[i];
